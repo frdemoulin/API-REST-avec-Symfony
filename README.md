@@ -4,6 +4,8 @@
 
 Basé sur Symfony 3.4
 
+Installation d'un projet Symfony 3.4 : `composer create-project symfony/framework-standard-edition blog-api "3.4.*"`
+
 ### Partie 1 - Qu'est-ce que REST ?
 
 1. [Une architecture, pas un protocole](01-qu'est-ce-que-REST/01-une-architecture-pas-un-protocole.md)
@@ -11,7 +13,7 @@ Basé sur Symfony 3.4
 3. [Les outils indispensables à tout bon développeur d'API](01-qu'est-ce-que-REST/03-les-outils-indispensables-à-tout-bon-développeur-d'API.md)
 4. [Introduction à la sérialisation avec JMSSerializer](01-qu'est-ce-que-REST/04-introduction-a-la-serialisation-avec-JMSSerializer.md)
 5. [Allez plus loin avec JMSSerializer](01-qu'est-ce-que-REST/05-aller-plus-loin-avec-JMSSerializer.md)
-6. [La sérialisation avec le composant Serializer de Symfony](01-qu'est-ce-que-REST/06-la -serialisation-avec-le-composant-Serializer-de-Symfony.md)
+6. [La sérialisation avec le composant Serializer de Symfony](01-qu'est-ce-que-REST/06-la-serialisation-avec-le-composant-Serializer-de-Symfony.md)
 
 Quiz : Partie 1
 
@@ -26,7 +28,8 @@ Quiz : Partie 1
 7. Tutoriel - Gestion d'erreurs via un listener sur l'évènement kernel.exception
 
 Quiz : Partie 2
-Activité : Terminez le CRUD de gestion d'articles
+
+Activité : Terminer le CRUD de gestion d'articles
 
 ### Partie 3 - Aller plus loin
 
@@ -37,11 +40,9 @@ Activité : Terminez le CRUD de gestion d'articles
 5. Documentez votre API
 6. Conclusion
 
-    Quiz : Partie 3
+Quiz : Partie 3
 
-
-
-Initialisation d'un repo GitHub
+**Initialisation d'un repo GitHub** :
 
 ```
 git init

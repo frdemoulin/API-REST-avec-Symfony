@@ -1,25 +1,21 @@
-[:link: La sérialisation avec le composant Serializer de Symfony - cours OCR](https://openclassrooms.com/fr/courses/4087036-construisez-une-api-rest-avec-symfony/4302521-la-serialisation-avec-le-composant-serializer-de-symfony)
+[:link: Premiers pas avec le FOSRestBundle - cours OCR](https://openclassrooms.com/fr/courses/4087036-construisez-une-api-rest-avec-symfony/4320271-premiers-pas-avec-le-fosrestbundle)
 
-# La sérialisation avec le composant Serializer de Symfony
+# Premiers pas avec le FOSRestBundle
 
-FOSRestBundle est utile pour organiser l'ensemble d'une application Symfony exposant une API REST. Il facilite l'intégration de JMSSerializer. Il est cependant possible d'utiliser le composant Serializer par défaut de Symfony
+## 1. Qu'est-ce que FOSRestBundle ?
 
-## 1. Travailler avec le composant Serializer de Symfony
+FOSRestBundle est un bundle permettant de répondre à des problèmes courants durant le développement d'API REST. Par exemple :
 
-### 1.1. Activer le Serializer de Symfony
+* Désérialiser le contenu de la requête automatiquement (de JSON ou XML vers objet)
+* Gérer la négociation de contenu : il s'agit de lire les entêtes (headers) d'une requête pour en déterminer la réponse adéquate
+* Désactiver la protection CSRF pour les formulaires : c'est très pratique dans la mesure où ce genre de vérification doit se faire côté client (pas de session côté serveur !)
+* Fournir un certain nombre d'annotations pour les controllers afin faciliter les choses
+* Faciliter l'intégration du bundle `JMSSerializerBundle` pour la sérialisation : on peut donc bénéficier de toutes les fonctionnalités de JMSSerializer vues précédemment
 
-Pour pouvoir utiliser le Serializer, on doit l'activer en configuration. Pour cela, on ajoute la configuration suivante dans le fichier `app/config/config.yml` :
+**Démarche à suivre :** générer un projet Symfony full stack neuf dans le but de créer une API REST de gestion d'articles de blog.
 
-```
-framework:
-    serializer:
-        enabled: true
-```
+## 2. Installation
 
-### 1.2. Sérialisation
 
-On se propose de créer une nouvelle entité `Author` comportant des attributs id, fullname, biography et articles.
 
-<details>
-<summary><b>Code de l'entité <code>Author</code></b></summary>
 ## 3. Configuration
