@@ -20,7 +20,7 @@ Quiz : Partie 1
 ### Partie 2 - Organiser l'ensemble de son application Symfony grâce au FOSRestBundle
 
 1. [Premiers pas avec le FOSRestBundle](02-FOSRestBundle/01-premiers-pas-avec-le-FOSRestBundle.md)
-2. La sérialisation
+2. [La sérialisation](02-FOSRestBundle/02-la-serialisation.md)
 3. La désérialisation
 4. Tutoriel - Paginez une liste de ressources
 5. Validez des ressources

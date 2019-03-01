@@ -14,7 +14,7 @@ Installation de JMSSerializer : `composer require jms/serializer-bundle`
 
 Une fois l'installation terminée, il faut déclarer JMSSerializer dans la classe `AppKernel` (dans le dossier `app` du projet) :
 
-```
+```php
 <?php
 
 use Symfony\Component\HttpKernel\Kernel;

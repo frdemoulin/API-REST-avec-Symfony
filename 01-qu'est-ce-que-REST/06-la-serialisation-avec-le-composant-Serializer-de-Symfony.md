@@ -95,6 +95,8 @@ class Author
 </p>
 </details>
 
+<br />
+
 On met à jour l'entité `Article` en conséquence afin d'y associer l'entité `Author` avec une relation ManyToOne.
 
 <details>
@@ -137,6 +139,8 @@ class Article
 ```
 </p>
 </details>
+
+<br />
 
 La commande `php bin/console doctrine:schema:update --dump-sql` permet de visualiser les requêtes SQL afin de mettre à jour la base de données. On met réellement le schéma de la base de données à jour avec la commande `php bin/console doctrine:schema:update --force`.
 
