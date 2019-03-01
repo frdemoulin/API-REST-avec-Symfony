@@ -32,6 +32,14 @@ class ArticleController extends Controller
      */
     public function createAction(Request $request)
     {
+        /*
+         {
+            "title": "Un nouvel article",
+            "content": "Le contenu de l'article.",
+            "author_id": 1
+        }
+         */
+
         // on récupère les datas reçues en POST
         $data = $request->getContent();
 
@@ -44,7 +52,7 @@ class ArticleController extends Controller
         $em->persist($article);
         $em->flush();
 
-        // on retourne une réponse
+        // on retourne une réponse avec le status code 201 Created
         return new Response('', Response::HTTP_CREATED);
     }
 
