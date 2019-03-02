@@ -67,8 +67,9 @@ swiftmailer:
     spool: { type: memory }
 
 sensio_framework_extra:
-   router:
+    router:
         annotations: false
+    request: { converters: true }
 
 # FOSRestBundle : sérialisation sans faire appel au service serializer
 format_listener:
@@ -78,3 +79,5 @@ format_listener:
 fos_rest:        
     view:
         view_response_listener: true
+    body_converter:
+        enabled: true
